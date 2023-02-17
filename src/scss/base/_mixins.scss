@@ -1,0 +1,29 @@
+@use 'variables' as v;
+
+@mixin telefono {
+    @media (min-width: v.$telefono){
+        @content; // @content sirve para que en el otro scss pueda agregarle lo que quiera al mq
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet){
+        @content; 
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop){
+        @content; 
+    }
+}
+
+@mixin desktopXL {
+    @media (min-width: v.$desktopXL){
+        @content; 
+    }
+}
+
+
+
+
