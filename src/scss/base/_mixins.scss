@@ -29,3 +29,9 @@ display: grid;
 grid-template-columns: repeat($columnas, 1fr);
 gap: $espaciado;
 }
+
+@mixin recetear-lista{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
